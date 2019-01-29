@@ -10,7 +10,22 @@
 // You will have time to focus on it later.
 
 (function() {
+    var roulette = Math.floor((Math.random() * 100) + 1);
+     console.log(roulette);
+    function detector(x){
+      if(Number.isInteger((x / 3) / 5)){
+      return 'fizzbuzz';
+      }
+      else if(Number.isInteger(x / 5)){
+        return 'buzz';
+      }
+      else if(Number.isInteger(x / 3)){
+        return 'fizz';
+      }
+      else {
+        return x;
+      }
 
-    // your code here
-
+    };
+console.log(detector(roulette));
 })();
