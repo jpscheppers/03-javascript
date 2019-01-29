@@ -10,13 +10,26 @@
 // You will have time to focus on it later.
 
 (function() {
-    
+
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
+      var myNumber = +document.getElementById("number").value;
+      console.log(myNumber);
+      function factorialize(x) {
+        if(x < 0) {
+            return x;
+        }
+        else if (x==0){
 
-        // your code here
+          return 1;
+        }
+        else {
+            return (x * factorialize(x-1));
+        }
 
+    }
+alert(factorialize(myNumber));
     });
 
 })();

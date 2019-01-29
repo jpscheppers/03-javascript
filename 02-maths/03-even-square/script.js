@@ -9,12 +9,26 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    document.getElementById("run").addEventListener("click", function() {
+/*function printEven(num) {
+  for (i=1; i<num; i++) {
+    if(i % 2 === 0) {
+      results = [i*i];
+      console.log(results);
+      alert(results);
+      }
+    }
+  }
 
-        // your code here
+document.getElementById("run").addEventListener("click", function printEven(21));
+*/
 
-    });
-
-})();
+document.getElementById("run").addEventListener("click", function() {
+  for (i=1; i<21; i++) {
+    if(i % 2 === 0) {
+      results = [i*i];
+      console.log(results);
+      alert(results);
+      }
+    }
+});

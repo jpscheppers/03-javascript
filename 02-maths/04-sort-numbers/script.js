@@ -12,11 +12,25 @@
 (function() {
 
     // to get the value of an input: document.getElementById("element-id").value
+  /*  var myNumbers = document.getElementById("numbers").value;
+    console.log(myNumbers);
+    var parsedNumbers = [parseInt(myNumbers)];
+    console.log(parsedNumbers);  */
+
+
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
 
+      var myNumbers = document.getElementById("numbers").value; // Input
+      var parsedNumbers = myNumbers.match(/\d+/g); // Get a list of all integers
+      parsedNumbers.sort(function(x,y){         // Sort list
+          return x - y;
+      });
+      console.log(parsedNumbers);
+      alert(parsedNumbers);
     });
 
 })();
+
+/*alternative method: use split instead of match + regex*/

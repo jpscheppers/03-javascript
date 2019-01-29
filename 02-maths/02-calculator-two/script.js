@@ -17,7 +17,7 @@
 
     var performOperation = function(operation) {
         // perform the operation
-        switch (document.getElementById("operator").value) {
+        switch (operation) {
           case 'addition':
             alert(x + y);
             break;
