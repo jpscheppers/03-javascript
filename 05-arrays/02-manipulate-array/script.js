@@ -9,8 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
+document.getElementById("run").addEventListener("click", function() {
     var fruits = [
         "pomme",
         "poire",
@@ -24,6 +24,9 @@
         "cerise",
     ];
 
-    // your code here
-
-})();
+    fruits.shift(); //removes first element of the array
+    fruits.pop(); //removes first element of the array
+    fruits.push("banana"); //adds item at the end of the array
+    fruits.unshift("kiwi"); //adds item at te start of the array
+    alert(fruits);
+});

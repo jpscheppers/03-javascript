@@ -9,8 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
+document.getElementById("run").addEventListener("click", function() {
     var fruits = [
         "pomme",
         "poire",
@@ -26,6 +26,9 @@
         "cerise",
     ];
 
-    // your code here
-
-})();
+      var arrayLength = fruits.length;
+      console.log(arrayLength);
+      for (i = 0;i < arrayLength; i++) {
+        console.log(fruits[i]);
+      };
+});
