@@ -9,8 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
+  document.getElementById("run").addEventListener("click", function() {
+    /*people[1].firstname*/
     var people = [
         {
             firstname: "Garald",
@@ -38,7 +39,20 @@
             email: "mcoal4@creativecommons.org",
         },
     ];
+/* Sans la syntaxe des fonctions fléchées
+    people.forEach(function(item){console.log(item);});
+// avec la syntaxe des fonctions fléchées
+    people.forEach(x => console.log(people[x].lastname));*/
 
-    // your code here
+        // forEach
+        people.forEach((lastname, i) => {
+          console.log(people[i].lastname);
+        })
 
-})();
+        // for 
+        for (var i = 0; i < people.length; i++){
+          console.log(people[i].lastname);
+        };
+
+
+  });

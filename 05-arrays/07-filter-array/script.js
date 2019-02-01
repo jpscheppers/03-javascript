@@ -89,6 +89,17 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+      var majeurs = people.filter(age => people.age >= 18);
+      console.log(majeurs);
+
+      /*var plus18[] = people.map(people.forEach((age, index) => {
+        if (age > 17){
+          return;
+        }
+      };*/
+
+      });
 
 })();

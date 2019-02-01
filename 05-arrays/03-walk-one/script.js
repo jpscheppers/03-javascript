@@ -31,4 +31,5 @@ document.getElementById("run").addEventListener("click", function() {
       for (i = 0;i < arrayLength; i++) {
         console.log(fruits[i]);
       };
+
 });
