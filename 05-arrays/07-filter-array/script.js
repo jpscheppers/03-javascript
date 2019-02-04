@@ -88,17 +88,17 @@
             age: 81,
         },
     ];
-
+    // console.log(people.age);   doesn't work...
     document.getElementById("run").addEventListener("click", function() {
 
-      var majeurs = people.filter(age => people.age >= 18);
-      console.log(majeurs);
+      /* doesn't work...
+      var majeurs = people.filter(age => people.age > 17);
+      console.log(majeurs);  */
 
-      /*var plus18[] = people.map(people.forEach((age, index) => {
-        if (age > 17){
-          return;
-        }
-      };*/
+      var majeurs = people.filter(function (el) {
+        return el.age >= 18
+      });
+      console.log(majeurs);
 
       });
 

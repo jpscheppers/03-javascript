@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
+  var myTarget = document.getElementsByClassName("target");
+  console.log(myTarget);
+    for (var i = 0; i < myTarget.length; i++) {
+  myTarget[i].textContent = "owned";
+  }
 
 })();

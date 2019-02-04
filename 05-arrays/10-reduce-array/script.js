@@ -89,6 +89,37 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
 
+
+
+      /*const arrSum = people => people.reduce((a, b) => a.age + b.age, 0);
+      console.log(arrSum);*/
+
+        Array.prototype.sum = function (prop) {
+      var total = 0
+      for ( var i = 0, _len = this.length; i < _len; i++ ) {
+          total += this[i][prop]
+      }
+      return total
+  }
+
+console.log(people.sum("Amount"));
+
+
+/* var ages = people.filter(function (el) {
+  for (i = 0, i < people.length, i++){
+    ages += el.age;
+  };
+});
+console.log(ages); */
+
+          /*
+            const add = (a, b) =>
+              a + b
+            // use reduce to sum our array
+            const sum = people.reduce(add);
+            console.log(sum); */
+
+    });
 })();
